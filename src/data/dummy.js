@@ -434,39 +434,49 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  {
+    field: 'Name',
+    headerText: 'Name',
     width: '150',
+    textAlign: 'Center',
+  },
+  {
+    headerText: 'Employee',
+    width: '180',
     template: gridEmployeeProfile,
-    textAlign: 'Center' },
-  { field: 'Name',
-    headerText: '',
-    width: '0',
     textAlign: 'Center',
   },
-  { field: 'Title',
+  {
+    field: 'Title',
     headerText: 'Designation',
-    width: '170',
+    width: '160',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  {
+    field: 'Country',
+    headerText: 'Country',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
-
-  { field: 'HireDate',
+  },
+  {
+    field: 'HireDate',
     headerText: 'Hire Date',
-    width: '135',
+    width: '130',
     format: 'yMd',
-    textAlign: 'Center' },
-
-  { field: 'ReportsTo',
-    headerText: 'Reports To',
+    textAlign: 'Center',
+  },
+  {
+    field: 'ReportsTo',
+    headerText: 'Manager',
     width: '120',
-    textAlign: 'Center' },
-  { field: 'EmployeeID',
-    headerText: 'Employee ID',
-    width: '125',
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
+  {
+    field: 'EmployeeID',
+    headerText: 'ID',
+    width: '100',
+    textAlign: 'Center',
+  },
 ];
 
 export const links = [
