@@ -8,13 +8,11 @@ const LOCAL_STORAGE_KEY = 'kanbanTasks';
 const Kanban = () => {
   const [tasks, setTasks] = useState([]);
 
-  // Load from localStorage or fallback to dummy data
   useEffect(() => {
     const stored = localStorage.getItem(LOCAL_STORAGE_KEY);
     setTasks(stored ? JSON.parse(stored) : kanbanData);
   }, []);
 
-  // Handle any card update
   const handleActionComplete = (args) => {
     if (['cardChanged', 'cardCreated', 'cardRemoved'].includes(args.requestType)) {
       const updated = args.changedRecords || args.addedRecords || args.deletedRecords || [];

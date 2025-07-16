@@ -1,4 +1,6 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', // ✅ necessary for dark mode switching via class
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   safelist: [
     'text-red-600',
@@ -8,7 +10,6 @@ module.exports = {
     'text-gray-400',
     'text-gray-500',
   ],
-  darkMode: 'class',
   theme: {
     fontFamily: {
       display: ['Open Sans', 'sans-serif'],
@@ -47,21 +48,9 @@ module.exports = {
         590: '590px',
       },
       backgroundImage: {
-        'hero-pattern':
-          "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
+        'hero-pattern': "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
       },
     },
   },
   plugins: [],
 };
-
-module.exports = {
-  darkMode: 'class',
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
